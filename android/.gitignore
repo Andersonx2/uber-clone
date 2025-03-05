@@ -1,16 +1,42 @@
-# OSX
-#
-.DS_Store
-
-# Android/IntelliJ
-#
+node_modules/
 build/
-.idea
-.gradle
-local.properties
-*.iml
-*.hprof
-.cxx/
 
-# Bundle artifacts
-*.jsbundle
+# Diretórios do iOS
+ios/Pods/
+ios/build/
+ios/*.xcodeproj/
+ios/*.xcworkspace/
+
+# Diretórios do Android
+android/.gradle/
+android/app/build/
+android/app/release/
+android/local.properties
+android/.idea/
+
+# Arquivos de cache e logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configurações do Editor
+.vscode/
+.idea/
+
+# Ambientes
+.env
+.env.*
+
+# Arquivos do Metro bundler
+metro.config.js
+babel.config.js
+
+# Arquivos temporários
+.tmp/
+.expo/
+.expo-shared/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

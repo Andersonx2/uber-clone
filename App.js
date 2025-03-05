@@ -12,7 +12,7 @@ import { HeaderShownContext } from '@react-navigation/elements';
 import MapScreen from './screens/MapScreen';
 import RideOptionsCards from './components/RideOptionsCards';
 
-export default function App() {
+export default function App() { 
   const Stack = createNativeStackNavigator();
 
   return (
@@ -58,5 +58,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-///https://youtu.be/bvn_HYpix6s?t=8965
+////https://youtu.be/bvn_HYpix6s?t=8965
 
