@@ -42,6 +42,8 @@ export default function App() {
               }} 
             />
 
+            
+
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
