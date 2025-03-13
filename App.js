@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, KeyboardAvoidingView, Platform,   } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import HomeScreen from "./screens/HomeScreen"
@@ -18,6 +18,12 @@ export default function App() {
   return (
 
     <Provider store={store}>
+
+      <KeyboardAvoidingView
+       style={{flex:1}}
+      //   behavior={Platform.OS === 'ios' ? 'padding' : 'height'} 
+      //  keyboardVerticalOffset={Platform.OS === "ios" ? -64 : 0}
+       >
       <NavigationContainer>
         <SafeAreaProvider>
           <Stack.Navigator>
@@ -27,26 +33,23 @@ export default function App() {
                 headerShown: false,
               }} 
             />
-
             <Stack.Screen name='MapScreen'
               component={MapScreen}
               options={{
                 headerShown: false,
               }} 
             />
-            
             <Stack.Screen name='RideOptionsCards'
               component={RideOptionsCards}
               options={{
                 headerShown: false,
               }} 
             />
-
-            
-
+  
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
+      </KeyboardAvoidingView>
     </Provider>
 
   );
@@ -60,5 +63,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-////https://youtu.be/bvn_HYpix6s?t=8965
+////https://youtu.be/bvn_HYpix6s?t=10576
 
