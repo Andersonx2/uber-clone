@@ -17,7 +17,7 @@ export const NavigateCard = () => {
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
       <Text style={tw`text-center py-5 text-xl`}>Boa noite, Anderson</Text>
-
+      
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
           <GooglePlacesAutocomplete
@@ -46,22 +46,16 @@ export const NavigateCard = () => {
           />
         </View>
         <NavFavourites />
-
-        <View style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-gray-100`}>
+        <View
+          style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-gray-100`}
+        >
           <TouchableOpacity
-          
-          onPress={()=> navigation.navigate("RideOptionsCards")}
-          
-          
-          style={tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}
-          
-          
+            onPress={() => navigation.navigate("RideOptionsCards")}
+            style={tw`flex flex-row justify-between bg-black w-24 px-4 py-3 rounded-full`}
           >
             <Icon name="car" type="font-awesome" color="white" size={16} />
-
             <Text style={tw`text-white text-center`}>Rides</Text>
           </TouchableOpacity>
-
           <TouchableOpacity
             style={tw`flex flex-row justify-between  w-24 px-4 py-3 rounded-full`}
           >
@@ -71,7 +65,6 @@ export const NavigateCard = () => {
               color="black"
               size={16}
             />
-
             <Text style={tw`text-center`}>Eats</Text>
           </TouchableOpacity>
         </View>

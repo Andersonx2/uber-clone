@@ -2,13 +2,10 @@ import {StyleSheet, KeyboardAvoidingView, Platform,   } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import HomeScreen from "./screens/HomeScreen"
-import tw from 'tailwind-react-native-classnames';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HeaderShownContext } from '@react-navigation/elements';
 import MapScreen from './screens/MapScreen';
 import RideOptionsCards from './components/RideOptionsCards';
 
@@ -63,5 +60,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-////https://youtu.be/bvn_HYpix6s?t=10576
 

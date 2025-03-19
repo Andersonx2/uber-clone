@@ -13,7 +13,7 @@ const Map = () => {
   const origin = useSelector(selectOrigin);
   const destination = useSelector(selectDestination);
   const mapRef = useRef(null);
-
+  
   useEffect(() => {
 
     if (!origin || !destination) return;
@@ -32,8 +32,8 @@ const Map = () => {
           initialRegion={{
             latitude: origin.location.lat,
             longitude: origin.location.lng,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
+            latitudeDelta: 0.08022,
+            longitudeDelta: 0.1121,
           }}
         >
           {origin && destination && (
