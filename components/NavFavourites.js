@@ -8,13 +8,13 @@ const data = [
     id: "123",
     icon: "home",
     location: "Home",
-    destination: "Palhoça, Santa Catariana, SC",
+    destination: "Florianópolis, Santa Catariana, SC",
   },
   {
     id: "456",
     icon: "briefcase",
     location: "Work",
-    destination: "FLorianopolis, Santa Catarina, SC",
+    destination: "São José, Santa Catariana, SC ",
   },
 ];
 
